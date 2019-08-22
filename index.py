@@ -9,4 +9,5 @@ def hello():
     name = request.args.get("name", "World")
     resp = make_response(f'Hello, {escape(name)}!')
     resp.set_cookie("evil_tracking_cookie", name)
+
     return resp
