@@ -7,6 +7,8 @@ def update_visits(visit = 0):
         return int(visit) + 1
     except ValueError:
         return 0
+    except:
+        return 0
 
 
 @app.route('/')
