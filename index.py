@@ -17,7 +17,7 @@ def hello():
     print(request.cookies)
     visits = update_visits(request.cookies.get('page_visits'))
     name_from_request = request.args.get("name", "stranger")
-    resp = make_response(f'Hello {escape(name_from_request)}, you have visited this page {escape(visits)} times.!')
+    resp = make_response(f'Hello {escape(name_from_request)}, you have visited this page {escape(visits)} times!')
     resp.set_cookie("page_visits", str(visits))
     resp.set_cookie("evil_tracking_cookie", name_from_request)
     return resp
