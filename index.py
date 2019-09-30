@@ -16,7 +16,7 @@ def update_visits(visit=0):
 @app.route('/')
 def hello():
     #  log request cookies to console
-    print(request.cookies)
+    print("request cookies: ", request.cookies)
     visits = update_visits(request.cookies.get('visits'))
     last_visit = request.cookies.get('last_visit')
 
