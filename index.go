@@ -28,7 +28,10 @@ func IndexHandler(w http.ResponseWriter, req *http.Request) {
     for _, cookie := range req.Cookies() {
         if cookie.Name == "visits" {
             val, err := strconv.Atoi(cookie.Value)
-            if err != nil {}
+            if err != nil {
+                visits = 0
+                continue
+            }
             visits = val
         }
 
