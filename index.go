@@ -1,12 +1,12 @@
 package main
 
 import (
+    "fmt"
     "io"
     "log"
     "net/http"
     "strconv"
     "time"
-    "fmt"
 )
 
 // addCookie will apply a new cookie to the response of a http
