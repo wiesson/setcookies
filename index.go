@@ -17,6 +17,7 @@ func addCookie(w http.ResponseWriter, name string, value string) {
         Name:    name,
         Value:   value,
         Expires: expire,
+        Secure: true,
     }
     http.SetCookie(w, &cookie)
 }
