@@ -1,9 +1,9 @@
 {
 	"version": 2,
 	"builds": [
-		{ "src": "index.py", "use": "@now/python" }
+		{ "src": "index.go", "use": "@now/go" }
 	],
 	"routes": [
-		{ "src": "/(.*)", "dest": "index.py" }
+		{ "src": "/(.*)", "dest": "index.go" }
 	]
 }
