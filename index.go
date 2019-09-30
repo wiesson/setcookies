@@ -21,7 +21,7 @@ func addCookie(w http.ResponseWriter, name string, value string) {
     http.SetCookie(w, &cookie)
 }
 
-func indexHandler(w http.ResponseWriter, req *http.Request) {
+func IndexHandler(w http.ResponseWriter, req *http.Request) {
     visits := -1
     lastVisit := ""
 
@@ -51,6 +51,6 @@ func indexHandler(w http.ResponseWriter, req *http.Request) {
 }
 
 func main() {
-    http.HandleFunc("/", indexHandler)
+    http.HandleFunc("/", IndexHandler)
     http.ListenAndServe(":8080", nil)
 }
