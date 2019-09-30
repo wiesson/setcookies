@@ -35,7 +35,6 @@ func IndexHandler(w http.ResponseWriter, req *http.Request) {
 			}
 
 			visits = val + 1
-
 		}
 
 		if cookie.Name == "last_visit" {

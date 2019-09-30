@@ -4,6 +4,6 @@
 		{ "src": "index.go", "use": "@now/go" }
 	],
 	"routes": [
-		{ "src": "/(.*)", "dest": "index.go" }
+		{ "src": "/", "dest": "index.go" }
 	]
 }
