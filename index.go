@@ -12,7 +12,7 @@ import (
 // addCookie will apply a new cookie to the response of a http
 // request, with the key/value this method is passed.
 func addCookie(w http.ResponseWriter, name string, value string) {
-	expire := time.Now().AddDate(0, 1, 0)
+	expire := time.Now().AddDate(0, 3, 0)
 	cookie := http.Cookie{
 		Name:    name,
 		Value:   value,
